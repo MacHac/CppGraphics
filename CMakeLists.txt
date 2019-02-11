@@ -10,4 +10,4 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 add_executable(cppgraphics ${SOURCE_FILES})
 
 target_include_directories(cppgraphics PUBLIC ${OPENGL_INCLUDE_DIR})
-target_link_libraries(cppgraphics ${OPENGL_gl_LIBRARY})
+target_link_libraries(cppgraphics ${OPENGL_gl_LIBRARY} glfw)
